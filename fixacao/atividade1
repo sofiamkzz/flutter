@@ -1,0 +1,32 @@
+void main() {
+  print('Hello World!');
+  pares();
+  primos();
+}
+
+// 1 - Faça um programa em Dart que mostre os números pares que existem de 1 a 100
+
+void pares() {
+  for (int i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
+}
+
+// 2 - Faça um programa em Dart que mostre os números primos de 1 a 100.
+
+void primos() {
+  for(int j = 1; j <= 100; j++) {
+    int cont = 0;
+
+    for(int aux = 1; aux <= j; aux++) {
+      if(j % aux == 0) {
+        cont++;
+      } 
+    }
+      if(cont == 2) {
+        print(j);
+    }
+  }
+}
